@@ -8,7 +8,17 @@
 
 import UIKit
 
-class FirstViewController: UIViewController {
+class FirstViewController: UIViewController, CanReceive {
+   
+    @IBAction func blueButtonPressed(_ sender: Any) {
+        view.backgroundColor = UIColor.blue
+    }
+    
+    
+    func dataReceived(dataProtocolParam: String) {
+        label.text = dataProtocolParam
+    }
+    
 
     @IBOutlet weak var label: UILabel!
     
@@ -27,6 +37,8 @@ class FirstViewController: UIViewController {
         if segue.identifier == "sendButtonForward" {
             let secondVC = segue.destination as! SecondViewController
             secondVC.data = textField.text!
+            
+            secondVC.delegate = self
         }
     }
 

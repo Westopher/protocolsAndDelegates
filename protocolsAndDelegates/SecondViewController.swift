@@ -8,12 +8,14 @@
 
 import UIKit
 
-protocol CanReceiv {
-    func dataReceived(data: String)
+protocol CanReceive {
+    func dataReceived(dataProtocolParam: String)
 }
 
 class SecondViewController: UIViewController {
 
+    var delegate: CanReceive?
+    
     var data = ""
     
     @IBOutlet weak var label2: UILabel!
@@ -28,6 +30,14 @@ class SecondViewController: UIViewController {
     
 
     @IBAction func sendDataBack(_ sender: Any) {
+        guard let textfield2Safe = textField2.text else {
+            print("textfield can not be assigned")
+            return
+        }
+        
+        delegate?.dataReceived(dataProtocolParam: textfield2Safe)
+        dismiss(animated: true, completion: nil)
+        
     }
     
 

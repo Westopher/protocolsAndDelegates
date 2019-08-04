@@ -61,6 +61,13 @@
                                     <constraint firstAttribute="trailing" secondItem="Pdh-70-cfO" secondAttribute="trailing" id="uyb-Pa-d5y"/>
                                 </constraints>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tPx-gD-a5y">
+                                <rect key="frame" x="0.0" y="74.5" width="414" height="30"/>
+                                <state key="normal" title="BLUE"/>
+                                <connections>
+                                    <action selector="blueButtonPressed:" destination="SHk-wT-1Of" eventType="touchUpInside" id="SLg-3M-AXD"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -70,7 +77,10 @@
                             <constraint firstItem="4jT-Qn-pwL" firstAttribute="leading" secondItem="vNl-PW-mCL" secondAttribute="leading" constant="10" id="Tqe-A3-ULK"/>
                             <constraint firstItem="4jT-Qn-pwL" firstAttribute="centerY" secondItem="1hD-Vu-z7A" secondAttribute="centerY" id="UMn-0i-kAf"/>
                             <constraint firstItem="4jT-Qn-pwL" firstAttribute="centerX" secondItem="1hD-Vu-z7A" secondAttribute="centerX" id="gsP-Iw-WUn"/>
+                            <constraint firstItem="tPx-gD-a5y" firstAttribute="leading" secondItem="vNl-PW-mCL" secondAttribute="leading" id="oN8-KR-EXN"/>
+                            <constraint firstItem="vNl-PW-mCL" firstAttribute="trailing" secondItem="tPx-gD-a5y" secondAttribute="trailing" id="qFN-M7-reS"/>
                             <constraint firstItem="vNl-PW-mCL" firstAttribute="trailing" secondItem="4jT-Qn-pwL" secondAttribute="trailing" constant="10" id="tRz-tn-2Tp"/>
+                            <constraint firstItem="tPx-gD-a5y" firstAttribute="top" secondItem="ibz-dd-1lu" secondAttribute="bottom" constant="10" id="yLv-sV-NvV"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="vNl-PW-mCL"/>
                     </view>
