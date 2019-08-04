@@ -8,6 +8,10 @@
 
 import UIKit
 
+protocol CanReceiv {
+    func dataReceived(data: String)
+}
+
 class SecondViewController: UIViewController {
 
     var data = ""

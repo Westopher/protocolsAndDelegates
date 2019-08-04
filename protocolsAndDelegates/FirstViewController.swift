@@ -14,19 +14,14 @@ class FirstViewController: UIViewController {
     
     @IBOutlet weak var textField: UITextField!
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
     }
-    
 
     @IBAction func sendButtonPressed(_ sender: Any) {
         performSegue(withIdentifier: "sendButtonForward", sender: self)
     }
-    
-    
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "sendButtonForward" {
