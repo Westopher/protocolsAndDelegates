@@ -23,7 +23,16 @@ class FirstViewController: UIViewController {
     
 
     @IBAction func sendButtonPressed(_ sender: Any) {
+        performSegue(withIdentifier: "sendButtonForward", sender: self)
     }
     
+    
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "sendButtonForward" {
+            let secondVC = segue.destination as! SecondViewController
+            secondVC.data = textField.text!
+        }
+    }
 
 }

@@ -10,6 +10,8 @@ import UIKit
 
 class SecondViewController: UIViewController {
 
+    var data = ""
+    
     @IBOutlet weak var label2: UILabel!
     
     @IBOutlet weak var textField2: UITextField!
@@ -17,7 +19,7 @@ class SecondViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        label2.text = data
     }
     
 
