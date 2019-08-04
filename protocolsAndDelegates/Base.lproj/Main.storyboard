@@ -47,7 +47,8 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
-                                            <segue destination="5Jg-NT-Vhb" kind="show" identifier="firstSegue" id="1Kf-rC-toW"/>
+                                            <action selector="sendButtonPressed:" destination="SHk-wT-1Of" eventType="touchUpInside" id="Jw8-RT-fVm"/>
+                                            <segue destination="5Jg-NT-Vhb" kind="show" identifier="sendButtonForward" id="1Kf-rC-toW"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -73,6 +74,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="vNl-PW-mCL"/>
                     </view>
+                    <connections>
+                        <outlet property="label" destination="Pdh-70-cfO" id="q0t-aC-2lx"/>
+                        <outlet property="textField" destination="oR3-C3-r36" id="fGd-VW-USH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="POP-er-s6m" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -115,7 +120,7 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
-                                            <segue destination="SHk-wT-1Of" kind="show" identifier="secondSegue" id="YaS-jU-5f9"/>
+                                            <action selector="sendDataBack:" destination="5Jg-NT-Vhb" eventType="touchUpInside" id="bdc-Dx-YMx"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -141,6 +146,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="iU7-Rl-e8a"/>
                     </view>
+                    <connections>
+                        <outlet property="label2" destination="3Ek-M9-y8b" id="MQd-aU-uQ4"/>
+                        <outlet property="textField2" destination="Ich-ig-dbe" id="dXC-NX-uue"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jP2-KH-ggb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
