@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--First View Controller-->
         <scene sceneID="hEY-AO-IEd">
             <objects>
-                <viewController id="SHk-wT-1Of" sceneMemberID="viewController">
+                <viewController id="SHk-wT-1Of" customClass="FirstViewController" customModule="protocolsAndDelegates" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1hD-Vu-z7A">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -78,10 +78,10 @@
             </objects>
             <point key="canvasLocation" x="-259.4202898550725" y="-50.223214285714285"/>
         </scene>
-        <!--View Controller-->
+        <!--Second View Controller-->
         <scene sceneID="ybu-sl-zyi">
             <objects>
-                <viewController id="5Jg-NT-Vhb" sceneMemberID="viewController">
+                <viewController id="5Jg-NT-Vhb" customClass="SecondViewController" customModule="protocolsAndDelegates" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="sdg-ZF-GS5">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
