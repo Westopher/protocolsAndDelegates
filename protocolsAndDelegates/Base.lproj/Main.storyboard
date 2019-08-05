@@ -63,7 +63,7 @@
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tPx-gD-a5y">
                                 <rect key="frame" x="0.0" y="74.5" width="414" height="30"/>
-                                <state key="normal" title="BLUE"/>
+                                <state key="normal" title="Red"/>
                                 <connections>
                                     <action selector="blueButtonPressed:" destination="SHk-wT-1Of" eventType="touchUpInside" id="SLg-3M-AXD"/>
                                 </connections>
